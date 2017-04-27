@@ -47,4 +47,14 @@ extension NetworkManager {
         
         requestAll(parameter, serializer: FlickrDeserializer<Photo>.self, completion: completion)
     }
+    
+    typealias LocationRequestCompletion = (_ response: BaseResponseDeserializer<Location>?, _ error: String?) -> Void
+    
+    func requestLocation(for id: String, completion: @escaping LocationRequestCompletion) {
+        var parameter = baseParameter
+        parameter[ParameterName.PhotoId] = id
+        parameter[ParameterName.Method] = Methods.PhotoLocationMethod
+        
+        requestAll(parameter, serializer: LocationDeserializer<Location>.self, completion: completion)
+    }
 }

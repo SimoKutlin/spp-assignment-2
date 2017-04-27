@@ -96,6 +96,7 @@ open class NetworkManager: NSObject {
                 })
                 return
             }
+
             let response = serializer.deserialize(responseData)
             DispatchQueue.main.async(execute: { () -> Void in
                 completion(response, response.error)

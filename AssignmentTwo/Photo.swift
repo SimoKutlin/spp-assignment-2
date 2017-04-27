@@ -14,6 +14,10 @@ final class Photo: NSObject, ResponseCollectionConvertible, ResponseConvertible,
     }
     
     var identifier: String = ""
+    var title: String = ""
+    var owner: String = ""
+    var secret: String = ""
+    var server: String = ""
     
     
     static func collection(_ responseData: Array<Dictionary<String, Any>>) -> [Photo] {
@@ -27,5 +31,9 @@ final class Photo: NSObject, ResponseCollectionConvertible, ResponseConvertible,
     init(responseData: Dictionary<String, Any>) {
         // TODO mapping
         identifier = responseData["id"] as? String ?? ""
+        title = responseData["title"] as? String ?? ""
+        owner = responseData["owner"] as? String ?? ""
+        secret = responseData["secret"] as? String ?? ""
+        server = responseData["server"] as? String ?? ""
     }
 }
