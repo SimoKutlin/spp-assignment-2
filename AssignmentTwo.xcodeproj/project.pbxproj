@@ -11,13 +11,14 @@
 		843611361EB128C2006D6BC3 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843611351EB128C2006D6BC3 /* ResultTableViewCell.swift */; };
 		843EB10B1EB2694200E850A7 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843EB10A1EB2694200E850A7 /* LocationViewController.swift */; };
 		843EB10D1EB272D900E850A7 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843EB10C1EB272D900E850A7 /* Location.swift */; };
+		844CC4681EB36FD200ECF46B /* PictureAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CC4671EB36FD200ECF46B /* PictureAnnotation.swift */; };
+		844CC46A1EB3701E00ECF46B /* PictureAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844CC4691EB3701E00ECF46B /* PictureAnnotationView.xib */; };
 		84DB58131EB28DB100C5B4C2 /* LocationDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB58121EB28DB100C5B4C2 /* LocationDeserializer.swift */; };
 		84DB58151EB28E7A00C5B4C2 /* LocationParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB58141EB28E7A00C5B4C2 /* LocationParser.swift */; };
 		A9394E3A1E4DEDAD00B80715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9394E391E4DEDAD00B80715 /* AppDelegate.swift */; };
 		A9394E3C1E4DEDAD00B80715 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9394E3B1E4DEDAD00B80715 /* ViewController.swift */; };
 		A9394E3F1E4DEDAD00B80715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9394E3D1E4DEDAD00B80715 /* Main.storyboard */; };
 		A9394E411E4DEDAD00B80715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9394E401E4DEDAD00B80715 /* Assets.xcassets */; };
-		A9394E441E4DEDAD00B80715 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9394E421E4DEDAD00B80715 /* LaunchScreen.storyboard */; };
 		A9394E4C1E4DEDBE00B80715 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9394E4B1E4DEDBE00B80715 /* NetworkManager.swift */; };
 		A9394E4F1E4DF06700B80715 /* FlickrDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9394E4E1E4DF06700B80715 /* FlickrDeserializer.swift */; };
 		A9394E511E4DF0CC00B80715 /* FlickrParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9394E501E4DF0CC00B80715 /* FlickrParser.swift */; };
@@ -30,6 +31,8 @@
 		843611351EB128C2006D6BC3 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
 		843EB10A1EB2694200E850A7 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		843EB10C1EB272D900E850A7 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		844CC4671EB36FD200ECF46B /* PictureAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureAnnotation.swift; sourceTree = "<group>"; };
+		844CC4691EB3701E00ECF46B /* PictureAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PictureAnnotationView.xib; sourceTree = "<group>"; };
 		84DB58121EB28DB100C5B4C2 /* LocationDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDeserializer.swift; sourceTree = "<group>"; };
 		84DB58141EB28E7A00C5B4C2 /* LocationParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationParser.swift; sourceTree = "<group>"; };
 		A9394E361E4DEDAD00B80715 /* AssignmentTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssignmentTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,7 +40,6 @@
 		A9394E3B1E4DEDAD00B80715 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A9394E3E1E4DEDAD00B80715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9394E401E4DEDAD00B80715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A9394E431E4DEDAD00B80715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9394E451E4DEDAD00B80715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9394E4B1E4DEDBE00B80715 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A9394E4E1E4DF06700B80715 /* FlickrDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrDeserializer.swift; sourceTree = "<group>"; };
@@ -66,6 +68,16 @@
 			name = Search;
 			sourceTree = "<group>";
 		};
+		844CC4661EB36FAA00ECF46B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				843EB10A1EB2694200E850A7 /* LocationViewController.swift */,
+				844CC4671EB36FD200ECF46B /* PictureAnnotation.swift */,
+				844CC4691EB3701E00ECF46B /* PictureAnnotationView.xib */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
 		A9394E2D1E4DEDAD00B80715 = {
 			isa = PBXGroup;
 			children = (
@@ -89,12 +101,11 @@
 				A9394E521E4DF26E00B80715 /* Network */,
 				A9394E4D1E4DF05400B80715 /* Deserializer */,
 				843EB10E1EB2768A00E850A7 /* Search */,
+				844CC4661EB36FAA00ECF46B /* Map */,
 				A9394E391E4DEDAD00B80715 /* AppDelegate.swift */,
 				A9394E3B1E4DEDAD00B80715 /* ViewController.swift */,
 				A9394E3D1E4DEDAD00B80715 /* Main.storyboard */,
-				843EB10A1EB2694200E850A7 /* LocationViewController.swift */,
 				A9394E401E4DEDAD00B80715 /* Assets.xcassets */,
-				A9394E421E4DEDAD00B80715 /* LaunchScreen.storyboard */,
 				A9394E451E4DEDAD00B80715 /* Info.plist */,
 			);
 			path = AssignmentTwo;
@@ -189,9 +200,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9394E441E4DEDAD00B80715 /* LaunchScreen.storyboard in Resources */,
 				A9394E411E4DEDAD00B80715 /* Assets.xcassets in Resources */,
 				A9394E3F1E4DEDAD00B80715 /* Main.storyboard in Resources */,
+				844CC46A1EB3701E00ECF46B /* PictureAnnotationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +222,7 @@
 				843EB10B1EB2694200E850A7 /* LocationViewController.swift in Sources */,
 				A9394E511E4DF0CC00B80715 /* FlickrParser.swift in Sources */,
 				A9394E541E4DF28400B80715 /* NetworkManager+Flickr.swift in Sources */,
+				844CC4681EB36FD200ECF46B /* PictureAnnotation.swift in Sources */,
 				84DB58131EB28DB100C5B4C2 /* LocationDeserializer.swift in Sources */,
 				A9394E3C1E4DEDAD00B80715 /* ViewController.swift in Sources */,
 				84DB58151EB28E7A00C5B4C2 /* LocationParser.swift in Sources */,
@@ -227,14 +239,6 @@
 				A9394E3E1E4DEDAD00B80715 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A9394E421E4DEDAD00B80715 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A9394E431E4DEDAD00B80715 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -16,7 +16,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     
-    var pictureID: String = "" {
+    var photoData: Photo? {
         didSet {
             locationManager = CLLocationManager()
             locationManager.requestWhenInUseAuthorization()
@@ -30,17 +30,17 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
     private var locationManager: CLLocationManager!
     
     private func fetchLocation() {
-        NetworkManager.shared.requestLocation(for: pictureID) { (response, error) in
+        NetworkManager.shared.requestLocation(for: (photoData?.identifier)!) { (response, error) in
             if let location = response?.objects {
                 self.pictureLocation = location[0]
                 if (self.pictureLocation.latitude != nil && self.pictureLocation.longitude != nil) {
-                    let annotation = MKPointAnnotation()
-                    annotation.coordinate = CLLocationCoordinate2D(latitude: self.pictureLocation.latitude, longitude: self.pictureLocation.longitude)
+                    let annotation = PictureAnnotation(CLLocationCoordinate2D(latitude: self.pictureLocation.latitude, longitude: self.pictureLocation.longitude))
+                    
                     self.mapView.addAnnotation(annotation)
                     
                     
                     self.mapView.showsUserLocation = true
-                    let picLoc: CLLocation = CLLocation(latitude: annotation.coordinate.latitude, longitude: annotation.coordinate.longitude)
+                    let picLoc: CLLocation = CLLocation(latitude: annotation.coordinates.latitude, longitude: annotation.coordinates.longitude)
                     let userLoc: CLLocation = CLLocation(latitude: self.mapView.userLocation.coordinate.latitude, longitude: self.mapView.userLocation.coordinate.longitude)
                     let distance: Double = (userLoc.distance(from: picLoc) / 1000)
                     self.distanceLabel.text = "Distance from your location: \(String(format: "%.2f", distance)) km"

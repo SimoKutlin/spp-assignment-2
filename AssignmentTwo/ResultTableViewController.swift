@@ -65,11 +65,8 @@ class ResultTableViewController: UITableViewController, UISearchBarDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SingleResultCell", for: indexPath)
         
-        let photo: Photo = photos[indexPath.row]
-        
         if let cell = cell as? ResultTableViewCell {
-            cell.displayTitle = photo.title
-            cell.pictureID = photo.identifier
+            cell.photoData = photos[indexPath.row]
         }
         
         return cell
@@ -83,7 +80,7 @@ class ResultTableViewController: UITableViewController, UISearchBarDelegate {
                 if let cell = sender as? ResultTableViewCell,
                     let indexPath = tableView.indexPath(for: cell),
                     let seguedToMVC = segue.destination as? LocationViewController {
-                    seguedToMVC.pictureID = cell.pictureID
+                    seguedToMVC.photoData = cell.photoData
                 }
                 
             default: break

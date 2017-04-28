@@ -12,11 +12,11 @@ class ResultTableViewCell: UITableViewCell {
     
     @IBOutlet weak var pictureTitle: UILabel!
     
-    var displayTitle: String = "" { didSet { updateUI() } }
-    var pictureID: String = ""
+    var photoData: Photo? { didSet { updateUI() } }
+    
     
     private func updateUI() {
-        pictureTitle?.text = displayTitle
+        pictureTitle?.text = photoData?.title
     }
     
 }

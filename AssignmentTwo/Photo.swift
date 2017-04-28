@@ -18,7 +18,10 @@ final class Photo: NSObject, ResponseCollectionConvertible, ResponseConvertible,
     var owner: String = ""
     var secret: String = ""
     var server: String = ""
+    var farm: String = ""
     
+    var thumbnailUrl: String = ""
+    var pictureUrl: String = ""
     
     static func collection(_ responseData: Array<Dictionary<String, Any>>) -> [Photo] {
         var photos = Array<Photo>()
@@ -35,5 +38,9 @@ final class Photo: NSObject, ResponseCollectionConvertible, ResponseConvertible,
         owner = responseData["owner"] as? String ?? ""
         secret = responseData["secret"] as? String ?? ""
         server = responseData["server"] as? String ?? ""
+        farm = responseData["farm"] as? String ?? ""
+        
+        thumbnailUrl = "https://farm\(farm).staticflickr.com/\(server)/\(identifier)_\(secret)_t.jpg"
+        pictureUrl = "https://farm\(farm).staticflickr.com/\(server)/\(identifier)_\(secret)_b.jpg"
     }
 }
